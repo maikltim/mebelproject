@@ -30,6 +30,7 @@ build/Release
 # production
 /build
 /dist
+app/css/
  
 
 # Dependancy directries
