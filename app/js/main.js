@@ -27,4 +27,13 @@ $('#search').on('click', function(){
           slidesToScroll: 1,
          // autoplay: true
       });
+
+      //load more
+
+      $("#loadmore").on('click', function() {
+          $('#boxs .box:hidden').slice(0, 4).slideDown()
+          if(($('#boxs .box:hidden')).length == 0) {
+              $('#loadmore').fadeOut('slow')
+          }
+      })
 });
