@@ -36,4 +36,14 @@ $('#search').on('click', function(){
               $('#loadmore').fadeOut('slow')
           }
       })
+
+
+      // collection 
+      $(".collections__inner").slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+       autoplay: false,
+    });
 });
