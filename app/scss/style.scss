@@ -20,7 +20,7 @@
   }
 
   &__top.off {
-    z-index: 3;        
+    z-index: 3;
   }
 
   &__top-inner {
@@ -430,9 +430,15 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-left: -30px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+  }
+
+  &__item {
+    flex-basis: calc(33.3333% - 30px);
+    margin-left: 30px;
   }
 
   &__inner {
@@ -1011,7 +1017,7 @@
   }
 }
 // end footer
- 
+
 // start hamburger
 .hamburger {
   position: relative;
@@ -1050,7 +1056,6 @@
   }
 }
 // end hamburger
-
 // start sidebar
 .menu {
   position: fixed;
@@ -1078,7 +1083,7 @@
 
 .main-menu-item {
   padding: 15px 30px;
-  background-color: rgba(237, 235,233, .5);
+  background-color: rgba(237, 235, 233, 0.5);
   border-bottom: 1px solid $underline;
 
   &.sidebar__title {
@@ -1198,6 +1203,5 @@ a ion-icon {
   }
 }
 // end cursor
- 
 
-@import '_media';
+@import "_media";
